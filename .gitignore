@@ -1,0 +1,31 @@
+# Ambiente Virtual
+.venv/
+venv/
+env/
+ENV/
+
+# Cachê Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Banco de dados
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Distribuição
+dist/
+build/
+*.egg-info/
