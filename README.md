@@ -77,6 +77,19 @@ python app.py
 
 A API estará disponível em: **http://127.0.0.1:8080**
 
+## 📖 Documentação Swagger/OpenAPI
+
+Após iniciar a aplicação, acesse a documentação interativa do Swagger em:
+
+**http://127.0.0.1:8080/swagger**
+
+Nesta página você pode:
+
+- ✅ Visualizar todos os endpoints
+- ✅ Ver os modelos de dados
+- ✅ Testar as requisições diretamente no navegador
+- ✅ Copiar exemplos de código
+
 ## 📚 Endpoints da API
 
 ### 1. Listar todas as tarefas
