@@ -46,12 +46,32 @@ pip install -r requirements.txt
 
 ## ▶️ Como Executar
 
-```bash
-# Ative o ambiente virtual (se não estiver ativo)
-.\.venv\Scripts\activate  # Windows
-source .venv/bin/activate  # macOS/Linux
+### Opção 1: Executar no PowerShell (Windows) - Recomendado
+
+```powershell
+# Navegue até o diretório do projeto
+cd C:\testesProgram\python\flask-api
+
+# Ative o ambiente virtual
+.\.venv\Scripts\activate
 
 # Execute a aplicação
+python app.py
+```
+
+### Opção 2: Executar no CMD (Windows)
+
+```cmd
+cd C:\testesProgram\python\flask-api
+.venv\Scripts\activate.bat
+python app.py
+```
+
+### Opção 3: Executar em macOS/Linux
+
+```bash
+cd api-python-flask
+source .venv/bin/activate
 python app.py
 ```
 
