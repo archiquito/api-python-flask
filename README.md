@@ -206,6 +206,44 @@ DELETE /tasks/{id}
 }
 ```
 
+## 🧪 Testes
+
+### Executar os testes
+
+```bash
+# Certifique-se de que a API está rodando em http://localhost:8080
+python -m pytest tests.py -v
+```
+
+### Testes Inclusos
+
+- **`test_create_task()`** - Valida criação de nova tarefa com status 201
+- **`test_get_task()`** - Valida listagem de todas as tarefas
+- **`test_update_task()`** - Valida atualização de uma tarefa existente
+- **`test_delete_task()`** - Valida exclusão de uma tarefa
+
+### Requisitos para testes
+
+```bash
+pip install pytest requests
+```
+
+### Estrutura de resposta esperada
+
+Ao criar uma tarefa:
+
+```json
+{
+  "message": "Task created successfully",
+  "task": {
+    "id": 1,
+    "title": "Test Task",
+    "description": "This is a test task.",
+    "completed": false
+  }
+}
+```
+
 ## 🏗️ Estrutura do Projeto
 
 ```
@@ -213,6 +251,7 @@ flask-api/
 ├── app.py                  # Aplicação principal
 ├── config.py               # Configurações da app
 ├── requirements.txt        # Dependências do projeto
+├── tests.py                # Testes da API
 ├── README.md               # Este arquivo
 ├── .gitignore              # Arquivos ignorados pelo Git
 ├── models/                 # Modelos de dados
